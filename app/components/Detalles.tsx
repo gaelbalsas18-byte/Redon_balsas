@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-export default function Detalles({productoActivo}) {
+export default function Detalles({ productoActivo }: { productoActivo: any }) {
   
   const images = [
     "/productos/r-one.png",
