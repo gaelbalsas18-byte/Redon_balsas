@@ -8,19 +8,19 @@ export default function Navbar() {
         <div className="text-xl font-bold text-gray-900">
             <img
             src="/logos/BalsasTrans.png"
-            className="absolute top-1 left-10 w-[80px] opacity-150"
+            className="absolute top-1 translate-x-1 md:translate-x-2 w-[50px] md:w-[80px] opacity-150"
             />
         </div>
 
         <div className="text-xl font-bold text-gray-900">
             <img
             src="/logos/logo redon.png"
-            className="absolute top-[-5] left-5 w-[130px] opacity-150 translate-x-30"
+            className="absolute top-[-5] left-5 w-[90px] md:w-[130px] opacity-150 md:translate-x-30 translate-x-18"
             />
         </div>
         
         {/* Menu */}
-        <nav className="hidden md:flex gap-10 text-lg uppercase font-medium text-white">
+        <nav className="hidden md:flex  gap-10 text-lg uppercase font-medium text-white">
           <a href="#hero" className="hover:text-red-700 font-semibold transition">Inicio</a>
           <a href="#productos" className="hover:text-red-700 font-semibold transition">Productos</a>
           <a href="#venta" className="hover:text-red-700 font-semibold transition">Venta</a>

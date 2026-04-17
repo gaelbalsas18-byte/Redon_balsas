@@ -60,15 +60,17 @@ export default function Hero() {
                   : "opacity-0 translate-y-6"
               }`}
             >
-              <h1 className="text-4xl text-center font-bold uppercase leading-tight text-red-700">
+              <h1 className="text-2xl text-center font-bold uppercase leading-relaxed md:leading-tight text-red-700 
+              md:text-4xl md:font-bold ">
                 {item.titulo}
               </h1>
 
-              <h3 className="text-red-700 text-center text-xs font-semibold uppercase tracking-widest mt-2">
+              <h3 className="text-red-700 text-center text-xs font-semibold uppercase tracking-widest mt-2 
+              md:text-xs md:tracking-widest">
                 {item.subtitulo}
               </h3>
 
-              <p className="mt-6 text-white text-center text-lg max-w-md">
+              <p className="mt-6 text-white text-center text-xs max-w-md md:text-lg">
                 {item.descripcion}
               </p>
             </div>

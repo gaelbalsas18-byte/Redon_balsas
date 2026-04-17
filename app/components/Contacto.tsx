@@ -24,10 +24,10 @@ export default function Contacto (){
             {/*Derecha*/}
             
             <div className="relative flex flex-col justify-center px-10 py-20 bg-red-700 txt-white">
-                 <h3 className="mt-[-90] text-xs text-white font-semibold uppercase tracking-widest text-neutral-500 mb-3 text-center mt-3">
+                 <h3 className="md:mt-[-90] text-xs text-white font-semibold uppercase tracking-widest text-neutral-500 mb-3 text-center mt-3">
               Balsas x Redon
                 </h3>
-                <h2 className="mt-5 text-5xl font-bold leading-tight mb-6">¿Listo para llevar tu clinica al siguiente nivel?</h2>
+                <h2 className="mt-5 text-5xl text-white font-bold leading-tight mb-6">¿Listo para llevar tu clinica al siguiente nivel?</h2>
                 <p className="text-lg text-white max-w-md">
                     Nuestro equipo te asesorara para elegir el equipo ideal segun tus necesidades.
                 </p>
@@ -78,7 +78,7 @@ export default function Contacto (){
 
         </div>
       </div>
-      {/* 🧱 LADO DERECHO */}
+      {/* LADO DERECHO */}
       <div className="flex items-center justify-center bg-white px-10 py-20">
 
         <div className="w-full max-w-md space-y-6">
