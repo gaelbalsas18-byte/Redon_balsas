@@ -5,8 +5,8 @@ export default function Detalles({ productoActivo }: { productoActivo: any }) {
   
   const images = [
     "/productos/r-one.png",
-    "/productos/one-r2.jpg",
-    "/productos/one-r3.jpg",
+    "/productos/one-r2.png",
+    "/productos/one-r3.png",
   ];
 
   const wood = [
