@@ -2,29 +2,25 @@
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 w-full z-60 bg-black backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-8 h-18 flex items-center justify-between">
-        {/*  LogoS */}
-        <div className="text-xl font-bold text-gray-900">
-            <img
-            src="/logos/BalsasTrans.png"
-            className="absolute top-1 translate-x-1 md:translate-x-2 w-[50px] md:w-[80px] opacity-150"
-            />
+    <header className="fixed top-0 left-0 w-full z-50">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        
+        {/* Logos */}
+        <div className="flex items-center gap-3">
+          <img src="/logos/logobalsas.png" className="w-10" />
+          <img src="/logos/logo redon.png" className="w-20 opacity-80" />
         </div>
 
-        <div className="text-xl font-bold text-gray-900">
-            <img
-            src="/logos/logo redon.png"
-            className="absolute top-[-5] left-5 w-[90px] md:w-[130px] opacity-150 md:translate-x-30 translate-x-18"
-            />
-        </div>
-        
-        {/* Menu */}
-        <nav className="hidden md:flex  gap-10 text-lg uppercase font-medium text-white">
-          <a href="#hero" className="hover:text-red-700 font-semibold transition">Inicio</a>
-          <a href="#productos" className="hover:text-red-700 font-semibold transition">Productos</a>
-          <a href="#venta" className="hover:text-red-700 font-semibold transition">Venta</a>
-          <a href="#contacto" className="hover:text-red-700 font-semibold transition">Contacto</a>
+        {/* Menu centrado */}
+        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 
+        backdrop-blur-xl bg-white/5 border border-white/60 
+        px-6 py-2 rounded-full gap-8 text-sm text-black">
+          
+          <a href="#hero">Inicio</a>
+          <a href="#Bene">Ventajas</a>
+          <a href="#productos">Productos</a>
+          <a href="#venta">Venta</a>
+          <a href="#contacto">Contacto</a>
         </nav>
       </div>
     </header>

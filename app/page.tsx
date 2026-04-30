@@ -7,6 +7,7 @@ import Productos from "./components/productos";
 import Detalles from "./components/Detalles";
 import Venta from "./components/Venta";
 import Contacto from "./components/Contacto";
+import Beneficios from "./components/Beneficios";
 
 export default function Home() {
   const [productoActivo, setProductoActivo] = useState(null);
@@ -18,6 +19,9 @@ export default function Home() {
 
       {/* Seccion principal */}
       <Hero />
+
+      {/*Seccion beneficios */}
+      <Beneficios/>
 
       {/* Seccion Productos */}
       <Productos setProductoActivo={setProductoActivo} />

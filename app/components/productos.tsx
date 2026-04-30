@@ -2,81 +2,109 @@
 
 export default function Productos({ setProductoActivo }) {
   return (
-    <section 
+    <section
       id="productos"
-      className="relative min-h-screen bg-white flex items-center py-20"
+      className="relative min-h-screen bg-white flex items-center py-32"
     >
-      
       <div className="max-w-6xl mx-auto px-6 w-full">
 
-        {/* Título */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Nuestros Productos
+        {/* Header */}
+        <div className="text-center mb-24">
+          <h2 className="text-4xl font-semibold text-gray-900">
+            Nuestros productos
           </h2>
-          <h3 className="text-xs text-black font-semibold uppercase tracking-widest mb-3 text-center mt-3">
+
+          <h3 className="mt-3 text-xs font-semibold uppercase tracking-widest mb-3 transition-all duration-700 delay-100 text-black">
             Balsas x Redon
           </h3>
-          <p className="text-black text-sm mt-4">
+
+          <p className="text-black mt-4 text-lg">
             Tecnología diseñada para precisión y eficiencia
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Productos */}
+        <div className="flex flex-col gap-24">
 
-          {/* Card 1 */}
-          <div className="group bg-transparent rounded-2xl p-6 hover:shadow-xl transition duration-300">
-            <img
-              src="/productos/r-one.png"
-              alt="R-One"
-              className="w-full h-[200px] object-contain mb-6 group-hover:scale-105 transition"
-            />
-            <h3 className="text-xl font-semibold text-red-700 text-center">
-              R-ONE
-            </h3>
-            <button 
-              onClick={() => setProductoActivo("r-one")}
-              className="mt-4 mx-auto block px-6 py-2 bg-red-700 text-white rounded-full text-sm font-semibold hover:bg-red-800 hover:scale-105 transition"
-            >
-              Detalles
-            </button>
+          {/* Producto 1 */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-10 group">
+            
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-3xl font-semibold text-gray-900">
+                R-ONE
+              </h3>
+              <p className="text-gray-500 mt-3 max-w-md">
+                Precisión avanzada en fresado con un flujo optimizado para clínicas modernas.
+              </p>
+
+              <button
+                onClick={() => setProductoActivo("r-one")}
+                className="mt-6 text-sm font-medium text-red-600 group-hover:underline"
+              >
+                Ver detalles →
+              </button>
+            </div>
+
+            <div className="flex-1">
+              <img
+                src="/productos/r-one.png"
+                className="w-full max-w-md mx-auto transition duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
 
-          {/* Card 2 */}
-          <div className="group bg-transparent rounded-2xl p-6 hover:shadow-xl transition duration-300">
-            <img
-              src="/productos/wood/wood1.png"
-              alt="Producto 2"
-              className="w-full h-[200px] object-contain mb-6 group-hover:scale-105 transition"
-            />
-            <h3 className="text-xl font-semibold text-red-700 text-center">
-              WOOM
-            </h3>
-            <button 
-              onClick={() => setProductoActivo("woom")}
-              className="mt-4 mx-auto block px-6 py-2 bg-red-700 text-white rounded-full text-sm font-semibold hover:bg-red-800 hover:scale-105 transition"
-            >
-              Detalles
-            </button>
+          {/* Producto 2 */}
+          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-10 group">
+            
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-3xl font-semibold text-gray-900">
+                WOOM
+              </h3>
+              <p className="text-gray-500 mt-3 max-w-md">
+                Diseño compacto con alto rendimiento para flujo digital continuo.
+              </p>
+
+              <button
+                onClick={() => setProductoActivo("woom")}
+                className="mt-6 text-sm font-medium text-red-600 group-hover:underline"
+              >
+                Ver detalles →
+              </button>
+            </div>
+
+            <div className="flex-1">
+              <img
+                src="/productos/wood/wood1.png"
+                className="w-full max-w-md mx-auto transition duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
 
-          {/* Card 3 */}
-          <div className="group bg-transparent rounded-2xl p-6 hover:shadow-xl transition duration-300">
-            <img
-              src="/productos/GTR/gtr2.png"
-              alt="Producto 3"
-              className="w-full h-[200px] object-contain mb-6 group-hover:scale-105 transition"
-            />
-            <h3 className="text-xl font-semibold text-red-700 text-center">
-              GTR
-            </h3>
-            <button 
-              onClick={() => setProductoActivo("gtr")}
-              className="mt-4 mx-auto block px-6 py-2 bg-red-700 text-white rounded-full text-sm font-semibold hover:bg-red-800 hover:scale-105 transition"
-            >
-              Detalles
-            </button>
+          {/* Producto 3 */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-10 group">
+            
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-3xl font-semibold text-gray-900">
+                GTR
+              </h3>
+              <p className="text-gray-500 mt-3 max-w-md">
+                Potencia y precisión para trabajos exigentes en fresado dental.
+              </p>
+
+              <button
+                onClick={() => setProductoActivo("gtr")}
+                className="mt-6 text-sm font-medium text-red-600 group-hover:underline"
+              >
+                Ver detalles →
+              </button>
+            </div>
+
+            <div className="flex-1">
+              <img
+                src="/productos/GTR/gtr2.png"
+                className="w-full max-w-md mx-auto transition duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
 
         </div>
