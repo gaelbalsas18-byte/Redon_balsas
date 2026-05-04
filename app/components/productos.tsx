@@ -1,5 +1,31 @@
 "use client";
 
+const productos = [
+  {
+    id: "r-one",
+    nombre: "R-ONE",
+    descripcion:
+      "Gracias al compresor integrado, su depósito de agua y un potente sistema de filtración, podrás empezar tu trabajo inmediatamente.",
+    imagen: "/productos/r-one.png",
+    pdf: "/Flayer/rone.pdf",
+  },
+  {
+    id: "woom",
+    nombre: "WOOM",
+    descripcion:
+      "Facilidad de uso y potencia en un solo dispositivo. Realiza tu trabajo rápidamente sin necesidad de hardware adicional.",
+    imagen: "/productos/wood/wood1.png",
+    pdf: "/Flayer/woom.pdf",
+  },
+  {
+    id: "gtr",
+    nombre: "GTR",
+    descripcion:
+      "¿Quieres ir más allá de los límites? Procesa todos los materiales con el máximo rendimiento.",
+    imagen: "/productos/GTR/gtr2.png",
+  },
+];
+
 export default function Productos({ setProductoActivo }) {
   return (
     <section
@@ -14,7 +40,7 @@ export default function Productos({ setProductoActivo }) {
             Nuestros productos
           </h2>
 
-          <h3 className="mt-3 text-xs font-semibold uppercase tracking-widest mb-3 transition-all duration-700 delay-100 text-black">
+          <h3 className="mt-3 text-xs font-semibold uppercase tracking-widest mb-3 text-black">
             Redon x Balsas
           </h3>
 
@@ -25,89 +51,61 @@ export default function Productos({ setProductoActivo }) {
 
         {/* Productos */}
         <div className="flex flex-col gap-24">
+          {productos.map((producto, index) => (
+            <div
+              key={producto.id}
+              className={`flex flex-col ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              } items-center justify-between gap-10 group`}
+            >
+              {/* TEXTO */}
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-3xl font-semibold text-gray-900">
+                  {producto.nombre}
+                </h3>
 
-          {/* Producto 1 */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10 group">
-            
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-3xl font-semibold text-gray-900">
-                R-ONE
-              </h3>
-              <p className="text-gray-500 mt-3 max-w-md">
-                Gracias al compresor integrado, su depósito de agua y un potente sistema de filtración, podrás empezar tu trabajo inmediatamente.
-              </p>
+                <p className="text-gray-500 mt-3 max-w-md">
+                  {producto.descripcion}
+                </p>
 
-              <button
-                onClick={() => setProductoActivo("r-one")}
-                className="mt-6 text-sm font-medium text-red-600 group-hover:underline"
-              >
-                Ver detalles →
-              </button>
+                {/* BOTONES */}
+                <div className="mt-6 flex flex-col gap-3 items-center md:items-start">
+
+                  {/* Ver detalles */}
+                  <button
+                    onClick={() => setProductoActivo(producto.id)}
+                    className="text-sm font-medium text-red-600 hover:underline"
+                  >
+                    Ver detalles →
+                  </button>
+
+                  {/* Ficha técnica (solo si hay PDF) */}
+                  {producto.pdf?.trim() && (
+                    <a
+                      href={producto.pdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium text-blue-600 hover:underline"
+                    >
+                      📄 Ficha técnica
+                    </a>
+                  )}
+
+                </div>
+              </div>
+
+              {/* IMAGEN */}
+              <div className="flex-1">
+                <img
+                  src={producto.imagen}
+                  alt={producto.nombre}
+                  className="w-full max-w-md mx-auto transition duration-500 group-hover:scale-105"
+                />
+              </div>
             </div>
-
-            <div className="flex-1">
-              <img
-                src="/productos/r-one.png"
-                className="w-full max-w-md mx-auto transition duration-500 group-hover:scale-105"
-              />
-            </div>
-          </div>
-
-          {/* Producto 2 */}
-          <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-10 group">
-            
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-3xl font-semibold text-gray-900">
-                WOOM
-              </h3>
-              <p className="text-gray-500 mt-3 max-w-md">
-                Facilidad de uso y potencia en un solo dispositivo. Realiza tu trabajo rápidamente sin necesidad de hardware adicional.
-              </p>
-
-              <button
-                onClick={() => setProductoActivo("woom")}
-                className="mt-6 text-sm font-medium text-red-600 group-hover:underline"
-              >
-                Ver detalles →
-              </button>
-            </div>
-
-            <div className="flex-1">
-              <img
-                src="/productos/wood/wood1.png"
-                className="w-full max-w-md mx-auto transition duration-500 group-hover:scale-105"
-              />
-            </div>
-          </div>
-
-          {/* Producto 3 */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-10 group">
-            
-            <div className="flex-1 text-center md:text-left">
-              <h3 className="text-3xl font-semibold text-gray-900">
-                GTR
-              </h3>
-              <p className="text-gray-500 mt-3 max-w-md">
-                ¿Quieres ir más allá de los límites? Procesa todos los materiales con el máximo rendimiento
-              </p>
-
-              <button
-                onClick={() => setProductoActivo("gtr")}
-                className="mt-6 text-sm font-medium text-red-600 group-hover:underline"
-              >
-                Ver detalles →
-              </button>
-            </div>
-
-            <div className="flex-1">
-              <img
-                src="/productos/GTR/gtr2.png"
-                className="w-full max-w-md mx-auto transition duration-500 group-hover:scale-105"
-              />
-            </div>
-          </div>
-
+          ))}
         </div>
+
       </div>
     </section>
   );

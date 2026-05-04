@@ -135,7 +135,7 @@ export default function Contacto() {
         {/* IMAGEN CENTRO */}
         <div className="hidden md:block">
           <img
-            src="/Ben/img_c1.jpg"
+            src="/Ben/r8.jpg"
             className="w-full h-full object-cover"
           />
         </div>
