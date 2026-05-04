@@ -15,7 +15,7 @@ export default function Productos({ setProductoActivo }) {
           </h2>
 
           <h3 className="mt-3 text-xs font-semibold uppercase tracking-widest mb-3 transition-all duration-700 delay-100 text-black">
-            Balsas x Redon
+            Redon x Balsas
           </h3>
 
           <p className="text-black mt-4 text-lg">
@@ -34,7 +34,7 @@ export default function Productos({ setProductoActivo }) {
                 R-ONE
               </h3>
               <p className="text-gray-500 mt-3 max-w-md">
-                Precisión avanzada en fresado con un flujo optimizado para clínicas modernas.
+                Gracias al compresor integrado, su depósito de agua y un potente sistema de filtración, podrás empezar tu trabajo inmediatamente.
               </p>
 
               <button
@@ -61,7 +61,7 @@ export default function Productos({ setProductoActivo }) {
                 WOOM
               </h3>
               <p className="text-gray-500 mt-3 max-w-md">
-                Diseño compacto con alto rendimiento para flujo digital continuo.
+                Facilidad de uso y potencia en un solo dispositivo. Realiza tu trabajo rápidamente sin necesidad de hardware adicional.
               </p>
 
               <button
@@ -88,7 +88,7 @@ export default function Productos({ setProductoActivo }) {
                 GTR
               </h3>
               <p className="text-gray-500 mt-3 max-w-md">
-                Potencia y precisión para trabajos exigentes en fresado dental.
+                ¿Quieres ir más allá de los límites? Procesa todos los materiales con el máximo rendimiento
               </p>
 
               <button

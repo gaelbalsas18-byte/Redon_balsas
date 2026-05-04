@@ -5,20 +5,20 @@ import { useEffect, useState } from "react";
 export default function Hero() {
   const slides = [
     {
-      titulo: "Redon R-ONE",
-      subtitulo: "Balsas x Redon",
+      titulo: "El siguiente nivel de fresado",
+      subtitulo: "Redon x Balsas",
       descripcion:
         "Precisión, innovación y tecnología avanzada para llevar tu flujo digital al siguiente nivel.",
     },
     {
       titulo: "Tecnología de alto nivel",
-      subtitulo: "Balsas x Redon",
+      subtitulo: "Redon x Balsas",
       descripcion:
         "Diseñado para clínicas que buscan velocidad, eficiencia y resultados perfectos.",
     },
     {
       titulo: "Flujo digital completo",
-      subtitulo: "Balsas x Redon",
+      subtitulo: "Redon x Balsas",
       descripcion:
         "Fresado en un solo ecosistema optimizado.",
     },

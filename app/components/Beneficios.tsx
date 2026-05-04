@@ -9,32 +9,27 @@ export default function Beneficios() {
   // DATA
   const data = [
     {
-      imagen: "/Ben/r1.jpg",
+      imagen: "/Ben/r2.jpg",
       titulo: "Fiable",
       descripcion:
         "Es la creencia de que él te respalda incondicionalmente, sin dudar, sin cuestionar, y que las carencias pueden ser llenadas de la manera correcta por su presencia. Es estar seguro de que no serás dañado de ninguna manera.",
       beneficios: ["Alta precisión", "Durabilidad"],
     },
     {
-      imagen: "/Ben/r2.jpg",
+      imagen: "/Ben/r4.jpg",
       titulo: "Innovador",
       descripcion: "La capacidad de pensar de manera creativa y anticipada, y de desarrollar nuevas ideas. Es la capacidad de mejorar continuamente, adaptarse al cambio y adaptarse rápida y efectivamente a diferentes dinámicas.",
       beneficios: ["Exactitud micrométrica", "Resultados repetibles"],
     },
+    
     {
-      imagen: "/Ben/img_c2.jpg",
-      titulo: "Justo",
-      descripcion: "Ser transparente, equitativo y justo con todas las partes interesadas y la sociedad, adhiriéndose a principios éticos con un entendimiento de la igualdad de oportunidades.",
-      beneficios: ["Menor tiempo", "Mayor productividad"],
-    },
-    {
-      imagen: "/Ben/r4.jpg",
+      imagen: "/Ben/r6.jpg",
       titulo: "Rapido",
       descripcion: "Poder actuar de manera ágil y flexible mientras se cumple el trabajo a tiempo y con calidad. Ser dinámico y proactivo y adaptarse al cambio.",
       beneficios: ["Software integrado", "Actualizaciones constantes"],
     },
     {
-      imagen: "/Ben/r5.jpg",
+      imagen: "/Ben/r7.jpg",
       titulo: "Dedicado",
       descripcion: "Es la internalización de todo el ser, recursos y energía de uno con gran sacrificio y abnegación, sin importar el interés propio, para lograr un objetivo específico como equipo. Es comprometerse plenamente con un trabajo.",
       beneficios: ["Flujo completo",],
@@ -83,7 +78,7 @@ export default function Beneficios() {
         <p className={`text-xs font-semibold uppercase tracking-widest text-black mb-4 transition-all duration-700 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}>
-            Balsas x Redon
+            Redon x Balsas
         </p>
 
         <h2 className={`text-4xl md:text-4xl font-semibold leading-tight transition-all duration-700 delay-100 ${
@@ -147,7 +142,6 @@ export default function Beneficios() {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -29,7 +29,7 @@ export default function Detalles({ productoActivo }: { productoActivo: any }) {
     return () => clearInterval(interval);
   }, []);
 
-  // 🚨 Si no hay producto seleccionado, no se muestra nada
+  // Si no hay producto seleccionado, no se muestra nada
   if (!productoActivo) return null;
 
   return (
@@ -128,3 +128,4 @@ export default function Detalles({ productoActivo }: { productoActivo: any }) {
     </section>
   );
 }
+

@@ -28,7 +28,7 @@ export default function Contacto() {
           <div className="max-w-3xl mx-auto text-center mb-16">
 
             <p className="text-xs uppercase tracking-widest text-gray-400 mb-4">
-              Balsas x Redon
+              Redon x Balsas
             </p>
 
             <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900">
@@ -116,7 +116,7 @@ export default function Contacto() {
         {/* TEXTO */}
         <div className="flex flex-col justify-center px-10 py-16 md:col-span-1">
           <p className="text-xs uppercase tracking-widest text-white mb-4">
-            Balsas x Redon
+            Redon x Balsas
           </p>
 
           <h2 className="text-4xl md:text-5xl text-white font-bold leading-tight mb-6">

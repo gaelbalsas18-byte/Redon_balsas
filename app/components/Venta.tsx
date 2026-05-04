@@ -41,7 +41,7 @@ export default function Venta() {
           </h2>
 
           <h3 className="mt-3 text-xs font-semibold uppercase tracking-widest mb-3 transition-all duration-700 delay-100 text-black">
-            Balsas x Redon
+            Redon x Balsas
           </h3>
 
           <p className={`text-black mt-4 text-lg transition-all duration-700 delay-100 ${
