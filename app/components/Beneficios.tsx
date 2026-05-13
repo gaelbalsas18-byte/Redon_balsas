@@ -23,13 +23,13 @@ export default function Beneficios() {
     },
     
     {
-      imagen: "/Ben/r6.jpg",
+      imagen: "/Ben/r8.jpg",
       titulo: "Rapido",
       descripcion: "Poder actuar de manera ágil y flexible mientras se cumple el trabajo a tiempo y con calidad. Ser dinámico y proactivo y adaptarse al cambio.",
       beneficios: ["Software integrado", "Actualizaciones constantes"],
     },
     {
-      imagen: "/Ben/r7.jpg",
+      imagen: "/Ben/r3.jpg",
       titulo: "Dedicado",
       descripcion: "Es la internalización de todo el ser, recursos y energía de uno con gran sacrificio y abnegación, sin importar el interés propio, para lograr un objetivo específico como equipo. Es comprometerse plenamente con un trabajo.",
       beneficios: ["Flujo completo",],
